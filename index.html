@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body style="width: 390px; height: 1920px;">
+
+<body>
     <main>
-        <span class="intro">
-            <h2>Дождались</h2>
+        <span class="intro fadeOut">
+            <div class="intro__text">
+                <h2>Дождались</h2>
+                <p>12.04.2025</p>
+            </div>
         </span>
-        <section class="photo"></section>
+        <article class="photo">
+            <span class="letter__name upper">M</span>
+            <span class="letter__name lower">A</span>
+        </article>
+        <div class="main__info">
+            <section class="invite">
+                <div class="invite__text">
+                    <h2>Дорогие гости</h2>
+                    <p>
+                        Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких и друзей.
+                        С большим удовольствием приглашаем вас на знаменательный праздник - нашу свадьбу!</p>
+                </div>
+                <div class="calendar">
+                    <input type="date">
+                </div>
+            </section>
+            <section class="location main__section">
+                <h3 class="section__header">Локация</h3>
+                <section class="location__section main__section">
+                    <p class="location__text">Регистрация состоится во Дворце Бракосочетания по адресу</p>
+                    <p class="location__address">г. Ростов-на-Дону</p>
+                    <button class="location__button">Посмотреть на карте</button>
+                </section>
+                <section class="location__section main__section">
+                    <p class="location__text">Свадебное торжество будет <br>проходить по адресу</p>
+                    <p class="location__address">г. Ростов-на-Дону</p>
+                    <button class="location__button">Посмотреть на карте</button>
+                </section>
+            </section>
+            <section class="timing main__section">
+                <h3 class="section__header">Порядок дня</h3>
+                <div class="worksheet">
+                    <div class="event">
+                        <h3 class="event__time">14:00</h3>
+                        <p class="event__description">Фуршет</p>
+                    </div>
+                </div>
+            </section>
+            <section class="dress-code"></section>
+            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUiFrDV-14TM-_5BN2AdniQX3ghUK9Yxu6afYdncpIJyXi5Q/viewform?embedded=true" width="390" height="1503" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe> -->
+        </div>
     </main>
 </body>
+
 </html>
