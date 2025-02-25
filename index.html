@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <script src="./scripts/animate-wrapper.js"></script>
 </head>
 
 <body>
@@ -19,65 +20,132 @@
                 <p>12.04.2025</p>
             </div>
         </span>
-        <article class="photo">
-            <span class="letter__name upper">M</span>
-            <span class="letter__name lower">A</span>
+        <article class="photo main__section">
+            <div class="main__section wrapper hide">
+                <h2>Анастасия</h2>
+                <h2>Михаил</h2>
+            </div>
         </article>
         <div class="main__info">
-            <section class="invite">
+            <section class="invite main__section">
                 <div class="invite__text">
-                    <h2>Дорогие гости</h2>
+                    <h2 class="section__header">Дорогие гости</h2>
                     <p>
                         Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких и друзей.
                         С большим удовольствием приглашаем вас на знаменательный праздник - нашу свадьбу!</p>
                 </div>
                 <div class="calendar">
-                    <input type="date">
+                    <table>
+                        <tr>
+                            <th colspan="7" class="calendar__title">Апрель</th>
+                        </tr>
+                        <tr>
+                            <td>ПН</td>
+                            <td>ВТ</td>
+                            <td>СР</td>
+                            <td>ЧТ</td>
+                            <td>ПТ</td>
+                            <td>СБ</td>
+                            <td>ВС</td>
+                        </tr>
+                        <tr>
+                            <td><div class="day"><div class="date"></div></div></td>
+                            <td><div class="day"><div class="date">1</div></div></td>
+                            <td><div class="day"><div class="date">2</div></div></td>
+                            <td><div class="day"><div class="date">3</div></div></td>
+                            <td><div class="day"><div class="date">4</div></div></td>
+                            <td><div class="day"><div class="date">5</div></div></td>
+                            <td><div class="day"><div class="date">6</div></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="day"><div class="date">7</div></div></td>
+                            <td><div class="day"><div class="date">8</div></div></td>
+                            <td><div class="day"><div class="date">9</div></div></td>
+                            <td><div class="day"><div class="date">10</div></div></td>
+                            <td><div class="day"><div class="date">11</div></div></td>
+                            <td><div class="day  special-day"><div class="date">12</div></div></td>
+                            <td><div class="day"><div class="date">13</div></div></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><div class="day"><div class="date">14</div></div></td>
+                            <td><div class="day"><div class="date">15</div></div></td>
+                            <td><div class="day"><div class="date">16</div></div></td>
+                            <td><div class="day"><div class="date">17</div></div></td>
+                            <td><div class="day"><div class="date">18</div></div></td>
+                            <td><div class="day"><div class="date">19</div></div></td>
+                            <td><div class="day"><div class="date">20</div></div></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><div class="day"><div class="date">21</div></div></td>
+                            <td><div class="day"><div class="date">22</div></div></td>
+                            <td><div class="day"><div class="date">23</div></div></td>
+                            <td><div class="day"><div class="date">24</div></div></td>
+                            <td><div class="day"><div class="date">25</div></div></td>
+                            <td><div class="day"><div class="date">26</div></div></td>
+                            <td><div class="day"><div class="date">27</div></div></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><div class="day"><div class="date">28</div></div></td>
+                            <td><div class="day"><div class="date">29</div></div></td>
+                            <td><div class="day"><div class="date">30</div></div></td>
+                            <td><div class="day"><div class="date">31</div></div></td>
+                        </tr>
+                    </table>
+                    
                 </div>
             </section>
             <section class="location main__section">
                 <h3 class="section__header">Локация</h3>
                 <section class="location__section main__section">
                     <p class="location__text">Регистрация состоится во Дворце Бракосочетания по адресу</p>
-                    <p class="location__address">г. Ростов-на-Дону</p>
-                    <button class="location__button">Посмотреть на карте</button>
+                    <p class="location__address">г. Ростов-на-Дону,
+                        Университетский пер., 48/2А</p>
+                    <a href="https://yandex.ru/maps/-/CHucrHkp" target="_blank"><button
+                            class="location__button">Посмотреть на карте</button></a>
                 </section>
                 <section class="location__section main__section">
                     <p class="location__text">Свадебное торжество будет <br>проходить по адресу</p>
-                    <p class="location__address">г. Ростов-на-Дону</p>
-                    <button class="location__button">Посмотреть на карте</button>
+                    <p class="location__address">г. Ростов-на-Дону, 
+                        Левобережная ул., 72</p>
+                    <a href="https://yandex.ru/maps/-/CHucrPmy" target="_blank"><button
+                            class="location__button">Посмотреть на карте</button></a>
                 </section>
             </section>
             <section class="timing main__section">
                 <h3 class="section__header">Порядок дня</h3>
                 <div class="worksheet">
                     <div class="event">
-                        <h3 class="event__time">14:00</h3>
+                        <h3 class="event__time">15:20</h3>
+                        <p class="event__description">Регистрация</p>
+                    </div>
+                    <div class="event">
+                        <h3 class="event__time">16:00</h3>
                         <p class="event__description">Фуршет</p>
                     </div>
                     <div class="event">
-                        <h3 class="event__time">14:00</h3>
-                        <p class="event__description">Фуршет</p>
+                        <h3 class="event__time">17:00</h3>
+                        <p class="event__description">Банкет</p>
                     </div>
                     <div class="event">
-                        <h3 class="event__time">14:00</h3>
-                        <p class="event__description">Фуршет</p>
+                        <h3 class="event__time">22:00</h3>
+                        <p class="event__description">Торт</p>
                     </div>
                     <div class="event">
-                        <h3 class="event__time">14:00</h3>
-                        <p class="event__description">Фуршет</p>
-                    </div>
-                    <div class="event">
-                        <h3 class="event__time">14:00</h3>
-                        <p class="event__description">Фуршет</p>
+                        <h3 class="event__time">23:00</h3>
+                        <p class="event__description">Салют</p>
                     </div>
                 </div>
             </section>
             <section class="dress-code main__section">
                 <h3 class="section__header">Дресскод</h3>
+                <p>Поскольку только невеста может быть в белом, остается всего лишь один цвет. Мы будем очень рады
+                    видеть вас в нем!</p>
                 <span class="dress-code__circle"></span>
             </section>
-            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUiFrDV-14TM-_5BN2AdniQX3ghUK9Yxu6afYdncpIJyXi5Q/viewform?embedded=true" width="390" height="1503" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe> -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUiFrDV-14TM-_5BN2AdniQX3ghUK9Yxu6afYdncpIJyXi5Q/viewform?embedded=true" width="390" height="1503" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
         </div>
     </main>
 </body>
