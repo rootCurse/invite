@@ -18,7 +18,7 @@ body {
 
 .photo {
   position: relative;
-  background-image: url(../image/intro.JPG);
+  background-image: url(../image/test.jpg);
   width: 100%;
   min-height: 100vh;
   background-size: cover;
@@ -28,10 +28,10 @@ body {
 
 .wrapper{
   color: white;
-  transform: rotate(-60deg);
+  /* transform: rotate(-60deg); */
   gap: 85px;
-  font-size: 48px;
-  margin-top: 40%;
+  font-size: 32px;
+  margin-top: 80%;
   opacity: 0;
   transition: gap 1s ease-in-out, opacity .5s ease-in-out;
 }
@@ -270,4 +270,79 @@ th, td {
 a{
   text-decoration: none;
   color: var(--black);
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.fadeInLeft{
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.hide{
+  opacity: 0;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.1);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.1);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heartBeat {
+  animation-name: heartBeat;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#googleFormIframe{
+  max-height: 460px;
+  margin-bottom: 100px;
 }

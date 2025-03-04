@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +22,8 @@
         </span>
         <article class="photo main__section">
             <div class="main__section wrapper hide">
-                <h2>Анастасия</h2>
                 <h2>Михаил</h2>
+                <h2>Анастасия</h2>
             </div>
         </article>
         <div class="main__info">
@@ -246,23 +246,23 @@
             <section class="timing main__section">
                 <h3 class="section__header">Порядок дня</h3>
                 <div class="worksheet">
-                    <div class="event">
+                    <div class="event hide">
                         <h3 class="event__time">15:20</h3>
                         <p class="event__description">Регистрация</p>
                     </div>
-                    <div class="event">
+                    <div class="event hide">
                         <h3 class="event__time">16:00</h3>
                         <p class="event__description">Фуршет</p>
                     </div>
-                    <div class="event">
+                    <div class="event hide">
                         <h3 class="event__time">17:00</h3>
                         <p class="event__description">Банкет</p>
                     </div>
-                    <div class="event">
+                    <div class="event hide">
                         <h3 class="event__time">22:00</h3>
                         <p class="event__description">Торт</p>
                     </div>
-                    <div class="event">
+                    <div class="event hide">
                         <h3 class="event__time">23:00</h3>
                         <p class="event__description">Салют</p>
                     </div>
@@ -272,25 +272,25 @@
                 <h3 class="section__header">Дресскод</h3>
                 <div class="main__section dress-code">
                     <h3 class="section__subtitle">Дамы</h3>
-                    <p>Поскольку только невеста может быть в белом, остается всего лишь один цвет. Мы будем очень рады
+                    <p>Поскольку только невеста может быть в белом, остается всего лишь один цвет, который нам нравится. И это черный. Мы будем очень рады
                         видеть вас в нем!</p>
-                    <span class="dress-code__circle"></span>
+                    <span class="dress-code__circle heartBeat"></span>
                 </div>
                 <div class="main__section dress-code">
                     <h3 class="section__subtitle">Мужчины</h3>
                     <p>Вас не смогут перепутать с невестой, поэтому без проблем можете приходить в белых рубашках и черных костюмах</p>
                     <div class="man__color">
-                        <span class="dress-code__circle" style="background-color: var(--white);"></span>
-                        <span class="dress-code__circle"></span>
+                        <span class="dress-code__circle heartBeat" style="background-color: var(--white);"></span>
+                        <span class="dress-code__circle heartBeat"></span>
                     </div>
                 </div>
             </section>
             <section class="dress-code main__section">
-                <p>В день свадьбы мы будем немного заняты, поэтому, в случае возникновения вопросов, вы всегда можете обратиться за помощью к нашим свадебным координаторам.<br></p>
+                <p>В день свадьбы мы будем немного заняты, поэтому, в случае возникновения вопросов, вы всегда можете обратиться за помощью к нашему свадебному координатору.<br></p>
                 <a href="tel:+79185456155">+7 918 545‑61‑55</a>
                 <p>Диана</p>
             </section>
-            <iframe
+            <iframe id="googleFormIframe"
                 src="https://docs.google.com/forms/d/e/1FAIpQLSeUiFrDV-14TM-_5BN2AdniQX3ghUK9Yxu6afYdncpIJyXi5Q/viewform?embedded=true"
                 width="390" height="1503" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
         </div>
